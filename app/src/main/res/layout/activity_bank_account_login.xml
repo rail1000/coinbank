@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="80dp">
+
+        <EditText
+            android:id="@+id/citi_user_name"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/citi_user_name"
+            android:textColor="@color/discovery_application_item_name_color"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="330dp"
+        android:layout_height="0.75dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/mine_menu_divider_color" />
+
+    <EditText
+        android:id="@+id/citi_user_passwords"
+        android:layout_width="330dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:textColor="@color/discovery_application_item_name_color"
+        android:hint="@string/citi_user_passwords"
+        android:ems="10"
+        android:textSize="16sp"
+        android:inputType="textPassword" />
+
+
+    <View
+        android:layout_width="330dp"
+        android:layout_height="0.75dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/mine_menu_divider_color" />
+
+
+    <TextView
+        android:id="@+id/bind"
+        android:layout_width="330dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/mine_header_bg_shape"
+        android:gravity="center"
+        android:text="@string/bind_bank_account"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

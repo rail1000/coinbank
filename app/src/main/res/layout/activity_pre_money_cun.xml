@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp">
+
+        <EditText
+            android:id="@+id/et_transfer_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:textColor="@color/discovery_application_item_name_color"
+            android:hint="@string/etc_transfer_address"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/lly_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/ic_transfer_contact" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="330dp"
+        android:layout_height="0.75dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/mine_menu_divider_color" />
+
+    <EditText
+        android:id="@+id/transferamount"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:background="@null"
+        android:hint="@string/etc_transfer_money"
+        android:textColor="@color/discovery_application_item_name_color"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="330dp"
+        android:layout_height="0.75dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/mine_menu_divider_color" />
+
+    <EditText
+        android:id="@+id/receievetime"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:background="@null"
+        android:hint="@string/etc_transfer_time"
+        android:textColor="@color/discovery_application_item_name_color"
+        android:textSize="13sp" />
+    <View
+        android:layout_width="330dp"
+        android:layout_height="0.75dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/mine_menu_divider_color" />
+
+
+    <EditText
+            android:id="@+id/transferdemo"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:background="@null"
+            android:hint="@string/etc_transfer_remark"
+            android:textColor="@color/discovery_application_item_name_color"
+            android:textSize="13sp" />
+
+    <View
+            android:layout_width="330dp"
+            android:layout_height="0.75dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/mine_menu_divider_color" />
+
+    <TextView
+        android:id="@+id/btn_confirm_deposit"
+        android:layout_width="330dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/mine_header_bg_shape"
+        android:gravity="center"
+        android:text="@string/etc_transfer_sub"
+        android:textColor="@color/white"
+        android:onClick="onClick"
+        android:textSize="14sp" />
+
+</LinearLayout>

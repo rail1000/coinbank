@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp">
+
+        <TextView
+            android:id="@+id/transaction_hash"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/transaction_hash"
+            android:textColor="@color/discovery_application_item_name_color"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="330dp"
+        android:layout_height="0.75dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/mine_menu_divider_color" />
+
+    <TextView
+        android:id="@+id/transaction_date"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:background="@null"
+        android:hint="@string/transaction_time"
+        android:textColor="@color/discovery_application_item_name_color"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="330dp"
+        android:layout_height="0.75dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/mine_menu_divider_color" />
+
+    <TextView
+        android:id="@+id/transaction_address_from"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:textColor="@color/discovery_application_item_name_color"
+        android:hint="@string/transaction_address_from"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="330dp"
+        android:layout_height="0.75dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/mine_menu_divider_color" />
+
+    <TextView
+        android:id="@+id/transaction_address_to"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:background="@null"
+        android:hint="@string/transaction_address_to"
+        android:textColor="@color/discovery_application_item_name_color"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="330dp"
+        android:layout_height="0.75dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/mine_menu_divider_color" />
+
+    <TextView
+        android:id="@+id/transaction_amount"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:background="@null"
+        android:hint="@string/etc_transfer_remark"
+        android:textColor="@color/discovery_application_item_name_color"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="330dp"
+        android:layout_height="0.75dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/mine_menu_divider_color" />
+
+    <TextView
+        android:id="@+id/transaction_note"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:background="@null"
+        android:hint="@string/transaction_note"
+        android:textColor="@color/discovery_application_item_name_color"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="330dp"
+        android:layout_height="0.75dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/mine_menu_divider_color" />
+
+    <TextView
+        android:id="@+id/btn_stop"
+        android:layout_width="330dp"
+        android:layout_height="43dp"
+        android:background="@drawable/mine_header_bg_shape"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:text="@string/etc_transfer_stop"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

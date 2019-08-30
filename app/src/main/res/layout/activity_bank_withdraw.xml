@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:background="@color/mine_menu_divider_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/citi_logo"
+            android:layout_width="41dp"
+            android:layout_height="44dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/card_number"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-85dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/bank_logo" />
+
+
+        <TextView
+            android:id="@+id/citi_name"
+            android:layout_width="281dp"
+            android:layout_height="37dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/citi_logo"
+            android:layout_marginStart="98dp"
+            android:gravity="left"
+            android:text="@string/citi_name"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/card_number"
+            android:layout_width="174dp"
+            android:layout_height="37dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/citi_name"
+            android:gravity="left"
+            android:text="尾号7943"
+            android:textColor="@color/mine_menu_text_color"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/withdraw_amount"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:id="@+id/withdraw_2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/icon_yuan"
+                android:layout_width="46dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/yuan" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="@string/available_balance"
+                android:textColor="@color/mine_menu_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/available_balance"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="10000"
+                android:textColor="@color/mine_menu_text_color"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_confirm_withdraw"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/mine_header_bg_shape"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="充值到帐户"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:background="@color/mine_menu_divider_color" />
+
+
+</LinearLayout>
