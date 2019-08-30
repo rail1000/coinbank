@@ -22,13 +22,13 @@
             android:id="@+id/citi_logo"
             android:layout_width="41dp"
             android:layout_height="44dp"
-            android:layout_alignParentStart="true"
             android:layout_below="@+id/card_number"
             android:layout_marginStart="24dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="-85dp"
             android:scaleType="centerCrop"
-            android:src="@mipmap/bank_logo" />
+            android:src="@mipmap/bank_logo"
+            android:layout_alignParentLeft="true" />
 
 
         <TextView
@@ -37,10 +37,11 @@
             android:layout_height="37dp"
             android:layout_alignParentStart="true"
             android:layout_alignTop="@+id/citi_logo"
-            android:layout_marginStart="98dp"
             android:gravity="left"
             android:text="@string/citi_name"
-            android:textSize="16dp" />
+            android:textSize="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="98dp" />
 
 
         <TextView
@@ -48,11 +49,11 @@
             android:layout_width="174dp"
             android:layout_height="37dp"
             android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/citi_name"
             android:gravity="left"
             android:text="尾号7943"
             android:textColor="@color/mine_menu_text_color"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            android:layout_alignLeft="@+id/citi_name" />
 
     </RelativeLayout>
 

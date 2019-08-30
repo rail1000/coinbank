@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/citicup program-coinbank.iml" filepath="$PROJECT_DIR$/citicup program-coinbank.iml" />
       <module fileurl="file://$PROJECT_DIR$/coinbank.iml" filepath="$PROJECT_DIR$/coinbank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/coinbank-app.iml" filepath="$PROJECT_DIR$/app/coinbank-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zxingsupport/coinbank-zxingsupport.iml" filepath="$PROJECT_DIR$/zxingsupport/coinbank-zxingsupport.iml" />
       <module fileurl="file://$PROJECT_DIR$/zxingsupport/zxingsupport.iml" filepath="$PROJECT_DIR$/zxingsupport/zxingsupport.iml" />
     </modules>
   </component>
