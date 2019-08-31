@@ -19,8 +19,8 @@ public class PretradeAdapter extends CommonAdapter<PreDeposit> {
 
     @Override
     public void convert(ViewHolder holder, PreDeposit preDeposit) {
-        holder.setText(R.id.tv_tx_hash,"交易哈希:"+preDeposit.getHash());
-        holder.setText(R.id.tv_amount,"金额:"+preDeposit.getPreamount());
+        holder.setText(R.id.tv_tx_hash,"金额:"+preDeposit.getPreamount());
+       // holder.setText(R.id.tv_amount,"金额:"+preDeposit.getPreamount());
         holder.setText(R.id.tv_message_time,preDeposit.getExtractime());
     }
 }

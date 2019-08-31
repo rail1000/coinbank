@@ -18,8 +18,8 @@ public class TradeAdapter extends CommonAdapter<TransactionRecord> {
 
     @Override
     public void convert(ViewHolder holder, TransactionRecord transactionRecord) {
-        holder.setText(R.id.tv_tx_hash,"交易哈希:"+transactionRecord.getTxHash());
-        holder.setText(R.id.tv_amount,"金额:"+transactionRecord.getType()+" "+transactionRecord.getAmount());
+        holder.setText(R.id.tv_tx_hash,"金额:"+transactionRecord.getType()+" "+transactionRecord.getAmount());
+       // holder.setText(R.id.tv_amount,"金额:"+transactionRecord.getType()+" "+transactionRecord.getAmount());
         holder.setText(R.id.tv_message_time,transactionRecord.getTxDate());
     }
 }

@@ -73,11 +73,11 @@
 
     <ListView
         android:id="@+id/lv_transaction_records"
-        android:descendantFocusability="blocksDescendants"
-        android:overScrollMode="never"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:descendantFocusability="blocksDescendants"
+        android:overScrollMode="never" />
 
     <LinearLayout
         android:layout_width="match_parent"
